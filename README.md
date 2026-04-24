@@ -5,4 +5,4 @@ Simulated Tier 1 IT help desk environment.
 Includes:
 - Ticket tracking (25 records)
 - Troubleshooting workflow
-- Metrics dashboard
+- Metrics tab
