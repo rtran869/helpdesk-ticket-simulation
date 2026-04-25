@@ -7,22 +7,57 @@
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
-      line-height: 1.6;
-      color: #222;
       max-width: 900px;
+      color: #222;
+      line-height: 1.6;
     }
+
     h1 { color: #2c3e50; }
     h2 { margin-top: 30px; }
+
     .box {
-      padding: 15px;
+      background: #f5f7fa;
       border: 1px solid #ddd;
+      padding: 15px;
       border-radius: 8px;
       margin-top: 10px;
-      background: #f9f9f9;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #eef2f7;
+    }
+
+    .metric {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      min-width: 200px;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .value {
+      font-size: 22px;
+      font-weight: bold;
+      margin-top: 5px;
     }
   </style>
 </head>
@@ -32,73 +67,75 @@
 <h1>Help Desk Ticket Simulation & Support Lab</h1>
 
 <p>
-Simulated Tier 1 IT Service Desk environment designed to replicate real-world troubleshooting, ticket management, escalation workflows, and support documentation.
+Simulated Tier 1 IT Service Desk environment demonstrating ticket management, troubleshooting workflows, escalation logic, and support documentation.
 </p>
 
-<h2>📊 Project Overview</h2>
-<div class="box">
-<ul>
-  <li>25 simulated IT support tickets</li>
-  <li>Tier 1 troubleshooting workflows</li>
-  <li>Escalation logic and resolution tracking</li>
-  <li>Excel-based metrics dashboard</li>
-</ul>
+<h2>📊 Key Metrics Overview</h2>
+
+<div class="metric">
+  <div class="card">
+    Average Resolution Time
+    <div class="value">18 min</div>
+  </div>
+
+  <div class="card">
+    Total Tickets
+    <div class="value">25</div>
+  </div>
+
+  <div class="card">
+    Escalation Rate
+    <div class="value">24%</div>
+  </div>
 </div>
 
-<h2>🛠 Skills Demonstrated</h2>
+<h2>🧾 Ticket Sample Dataset</h2>
+
+<div class="box">
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Issue</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th>Time</th>
+    <th>Escalated</th>
+  </tr>
+
+  <tr><td>1001</td><td>Password Reset</td><td>High</td><td>Closed</td><td>8</td><td>No</td></tr>
+  <tr><td>1002</td><td>Printer Issue</td><td>Medium</td><td>Closed</td><td>15</td><td>No</td></tr>
+  <tr><td>1003</td><td>Outlook Error</td><td>High</td><td>Escalated</td><td>22</td><td>Yes</td></tr>
+  <tr><td>1004</td><td>VPN Access</td><td>High</td><td>Closed</td><td>12</td><td>No</td></tr>
+  <tr><td>1005</td><td>Software Install</td><td>Low</td><td>Closed</td><td>10</td><td>No</td></tr>
+</table>
+
+<p style="margin-top:10px;">(Sample subset of 25-ticket dataset used for simulation)</p>
+</div>
+
+<h2>🔧 Troubleshooting Workflow</h2>
+
+<div class="box">
+<ol>
+  <li>Receive ticket via phone/email/system</li>
+  <li>Identify issue type and severity</li>
+  <li>Apply Tier 1 troubleshooting steps</li>
+  <li>Resolve or escalate based on SLA impact</li>
+  <li>Document resolution in ticket system</li>
+  <li>Close ticket after confirmation</li>
+</ol>
+</div>
+
+<h2>📌 Skills Demonstrated</h2>
+
 <div class="box">
 <ul>
   <li>IT Service Desk Ticket Management</li>
   <li>Hardware & Software Troubleshooting</li>
-  <li>User Support & Issue Resolution</li>
+  <li>Escalation Decision Making</li>
   <li>Incident Documentation</li>
-  <li>Escalation Procedures</li>
-  <li>Excel Reporting & Metrics Tracking</li>
+  <li>Prioritization Under SLA Constraints</li>
 </ul>
 </div>
-
-<h2>📁 Project Structure</h2>
-<div class="box">
-<ul>
-  <li><b>data/</b> – 25-ticket dataset (Excel)</li>
-  <li><b>dashboard/</b> – resolution metrics dashboard</li>
-  <li><b>docs/</b> – troubleshooting workflow & sample tickets</li>
-</ul>
-</div>
-
-<h2>📌 Example Ticket Types</h2>
-<div class="box">
-<ul>
-  <li>Password resets & account lockouts</li>
-  <li>Printer connectivity issues</li>
-  <li>Outlook/email access problems</li>
-  <li>VPN and network troubleshooting</li>
-</ul>
-</div>
-
-<h2>📈 Key Metrics Tracked</h2>
-<div class="box">
-<ul>
-  <li>Average resolution time</li>
-  <li>Ticket volume by issue type</li>
-  <li>Escalation rate</li>
-  <li>Closed vs open tickets</li>
-</ul>
-</div>
-
-<h2>🔗 Files</h2>
-<div class="box">
-<p>
-<a href="./data/ticket_data.xlsx">Download Ticket Dataset (Includes Metrics)</a><br>
-<a href="./docs/troubleshooting_workflow.md">Troubleshooting Workflow</a><br>
-<a href="./docs/sample_tickets.md">Sample Tickets</a>
-</p>
-</div>
-
-<h2>📌 Summary</h2>
-<p>
-This project demonstrates hands-on understanding of Tier 1 IT support operations, including structured troubleshooting, ticket documentation, prioritization, and escalation decision-making in a service desk environment.
-</p>
 
 </body>
 </html>
